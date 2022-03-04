@@ -23,13 +23,7 @@ https://youdomain/bing/index.php?param=link
 #### 输出JSON数据
 
 ```
-https://youdomain/bing/index.php
-```
-
-#### 输出XML数据
-
-```
-https://youdomain/bing/index.php?param=xml
+https://youdomain/bing/index.php?param=json
 ```
 
 ### 已启用伪静态
@@ -49,16 +43,8 @@ https://youdomain/bimg/link
 #### 输出JSON数据
 
 ```
-https://youdomain/bimg/
+https://youdomain/bimg/json
 ```
-
-#### 输出XML数据
-
-```
-https://youdomain/bimg/xml
-```
-
-
 
 ## 伪静态
 
