@@ -69,7 +69,7 @@ location /bimg/
     if (-f $request_filename) {
         break;
     }
-    rewrite /bing/(.*)$ /bing/index.php?param=$1 last;
+    rewrite /bing/(.*)$ /bimg/index.php?param=$1 last;
 }
 ```
 
@@ -87,7 +87,7 @@ RewriteRule ^(.*)$ index.php?param=$1 [L]
 
 ## 每日自动获取
 
-使用 Crontab 定时访问`https://youdomain/bing/index.php`即可
+使用 Crontab 定时访问`https://youdomain/bimg/index.php`即可
 
 ## 感谢
 
