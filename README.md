@@ -53,9 +53,9 @@ https://youdomain/bing/json
 ```
 location /
 {
-	if (-f $request_filename) {
+    if (-f $request_filename) {
         break;
-	}
+    }
     rewrite ^/(.*)$ /index.php?param=$1 last;
 }
 
@@ -87,7 +87,7 @@ RewriteRule ^(.*)$ index.php?param=$1 [L]
 
 ## 每日自动获取
 
-使用 Crontab 定时访问`https://youdomain/bing/index.php`即可
+使用 Crontab 定时访问`https://youdomain/bing/index.php?param=json`即可
 
 ## 感谢
 
