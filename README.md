@@ -31,19 +31,19 @@ https://youdomain/bing/index.php?param=json
 #### 跳转图片
 
 ```
-https://youdomain/bimg/redirect
+https://youdomain/bing/redirect
 ```
 
 #### 直接输出图片链接
 
 ```
-https://youdomain/bimg/link
+https://youdomain/bing/link
 ```
 
 #### 输出JSON数据
 
 ```
-https://youdomain/bimg/json
+https://youdomain/bing/json
 ```
 
 ## 伪静态
@@ -64,12 +64,12 @@ location /
 ### Nginx（子目录）
 
 ```
-location /bimg/
+location /bing/
 {
     if (-f $request_filename) {
         break;
     }
-    rewrite /bing/(.*)$ /bimg/index.php?param=$1 last;
+    rewrite /bing/(.*)$ /bing/index.php?param=$1 last;
 }
 ```
 
@@ -79,7 +79,7 @@ location /bimg/
 
 ```
 RewriteEngine On
-RewriteBase /bimg/
+RewriteBase /bing/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?param=$1 [L]
@@ -87,7 +87,7 @@ RewriteRule ^(.*)$ index.php?param=$1 [L]
 
 ## 每日自动获取
 
-使用 Crontab 定时访问`https://youdomain/bimg/index.php`即可
+使用 Crontab 定时访问`https://youdomain/bing/index.php`即可
 
 ## 感谢
 
