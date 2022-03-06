@@ -2,7 +2,8 @@
 
 获取必应每日图片，采用PDO方式连接数据库。
 
-DEMO: http://b.pwm.hu/bimg
+DEMO1: http://b.pwm.hu/bimg
+DEMO2: https://nongfu.alwaysdata.net/bing
 
 ## 使用
 
